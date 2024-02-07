@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #cfd4da;
+}
+.card{
+    width: 350px;
+    height: 410px;
+
+    background-color: #5f8dc2;
+    border-radius: 15px;
+    padding: 10px;
+
+    box-shadow: 10px 10px 5px #203259;
+    transition: 0.8s;
+
+    display: grid;
+    grid-template-columns: 10% 35% 10% 25% 20%;
+    row-gap: 5px;
+
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.name{
+    grid-column: span 4;
+    grid-row: span 2;
+    color: white;
+    font: 32pt "Montserrat SemiBold";
+}
+.card .del_img{
+    grid-column: 5/5;
+    grid-row: span 2;
+    width: 52%;
+    transform: translate(77%,5%);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: white;
+    border-radius: 50px;
+}
+.card .del_img:hover{
+    transform:scale(1.2) translate(77%,5%);
+    background-color: #082042;
+}
+.card .weather_img{
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 140px;
+}
+.card .temp{
+    grid-column: span 3;
+    display: inline-block;
+    font: 42pt "Montserrat SemiBold";
+    text-align: right;
+}
+.card .feel_temp{
+    grid-column: span 3;
+    color: rgba(255, 255, 255, 0.72);
+    display: inline-block;
+    font: 24pt "Montserrat SemiBold";
+    text-align: right;
+}
+span{
+    color: white;
+    font: 18pt "Montserrat SemiBold";
+
+    grid-row: span 1;
+    grid-column: span 5;
+}
+.weather{
+    font: 24pt "Montserrat SemiBold";
+    grid-row: span 2;
+}
+card .icon{
+    grid-column: span 1;
+    width: 100%;
+}
+.humidity,
+.pressure{
+    grid-column: span 4;
+}
+.wind{
+    grid-column: span 1;
+}
+.direction{
+    grid-column: 4/4;
+}
+
+.findLine{
+
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%,-50%);
+
+    width: 450px;
+    display: flex;
+    gap: 10px;
+    padding: 5px 8px;
+    background-color: #5F8DC2;
+    border-radius: 50px;
+    transition: 0.8s ease-in-out;
+
+
+
+}
+.start{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.findLine input{
+
+    width: 400px;
+    border: none;
+    outline: none;
+
+    font: 18pt "Montserrat";
+    padding: 7px 15px;
+    border-radius: 40px;
+
+}
+.findLine img{
+    margin-right: 7px;
+}
+.findLine img:hover{
+    transform: scale(1.05);
+}
+
+.cardHolder{
+    margin: 100px auto 50px;
+
+    display: flex;
+    width: 1300px;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+.invisible{
+    opacity: 0;
+}
+.hover{
+    border: 5px dashed #130b46;
+
+}
+.zoneCard{
+    width: 350px;
+    height: 410px;
+}
