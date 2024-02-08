@@ -1,5 +1,5 @@
 //константы
-const API_KEY = "75eb1d4bac77e12a15c7f5c59738abf5";
+const API_KEY = "?";
 const API_REQ="https://api.openweathermap.org/data/2.5/weather?";
 const LANG="ru";
 const UNITS="metric";
